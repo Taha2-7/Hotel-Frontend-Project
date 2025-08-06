@@ -1,0 +1,23 @@
+.rooms_wrapper .room-item-wrap {
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.rooms_wrapper .room-items .room-content{
+    border: .125rem solid var(--bg-white);
+    padding: 5rem 1.875rem;
+    -webkit-transform: scale3d(1.2,1.2,1.2);
+    transform: scale3d(1.2,1.2,1.2);
+    transition: all 500s ease-in 0s;
+    opacity: 0;
+}
+
+.rooms_wrapper .room-items:hover .room-content {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
